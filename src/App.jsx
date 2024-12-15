@@ -4,12 +4,14 @@ import {
   About,
   Projects,
   Testimonials,
+  Contact,
   Video,
 } from "./components/components.js";
 
 function App() {
   return (
     <>
+      <Toaster />
       <Header />
       <Hero />
 
@@ -19,6 +21,7 @@ function App() {
         <Projects />
         <Video />
         <Testimonials />
+        <Contact />
       </main>
     </>
   );
