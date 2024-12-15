@@ -5,13 +5,13 @@ import {
   Projects,
   Testimonials,
   Contact,
+  Footer,
   Video,
 } from "./components/components.js";
 
 function App() {
   return (
     <>
-      <Toaster />
       <Header />
       <Hero />
 
@@ -23,6 +23,8 @@ function App() {
         <Testimonials />
         <Contact />
       </main>
+
+      <Footer />
     </>
   );
 }
