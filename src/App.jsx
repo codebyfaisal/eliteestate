@@ -3,6 +3,7 @@ import {
   Hero,
   About,
   Projects,
+  Testimonials,
   Video,
 } from "./components/components.js";
 
@@ -17,6 +18,7 @@ function App() {
         <About />
         <Projects />
         <Video />
+        <Testimonials />
       </main>
     </>
   );
