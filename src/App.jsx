@@ -3,6 +3,7 @@ import {
   Hero,
   About,
   Projects,
+  Video,
 } from "./components/components.js";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <main className="px-2 md:px-10 lg:px-20 relative space-y-20">
         <About />
         <Projects />
+        <Video />
       </main>
     </>
   );
