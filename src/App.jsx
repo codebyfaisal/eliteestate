@@ -8,10 +8,12 @@ import {
   Footer,
   Video,
 } from "./components/components.js";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <>
+      <Toaster />
       <Header />
       <Hero />
 
