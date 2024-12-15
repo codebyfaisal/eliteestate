@@ -66,3 +66,122 @@ body {
 }
 
 /* ================== */
+.canvas {
+  overflow: hidden;
+}
+
+.canvas {
+  .dot,
+  .line,
+  .triangle,
+  .square {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.canvas {
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    animation: dot-move 36s infinite cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  .line {
+    width: 2px;
+    height: 100px;
+    animation: line-move 38s infinite cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    animation: triangle-move 35s infinite ease-in-out;
+  }
+
+  .square {
+    width: 20px;
+    height: 20px;
+    animation: square-move 36s infinite ease-in-out;
+  }
+}
+
+/* Irregular Animations */
+@keyframes dot-move {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(30vw, 20vh);
+  }
+  40% {
+    transform: translate(-20vw, 50vh);
+  }
+  60% {
+    transform: translate(50vw, -40vh);
+  }
+  80% {
+    transform: translate(-40vw, -30vh);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes line-move {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(50vw, 40vh) rotate(30deg);
+  }
+  50% {
+    transform: translate(-30vw, -50vh) rotate(100deg);
+  }
+  75% {
+    transform: translate(40vw, 30vh) rotate(180deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(270deg);
+  }
+}
+
+@keyframes triangle-move {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-50vw, -30vh) rotate(45deg);
+  }
+  50% {
+    transform: translate(40vw, 60vh) rotate(90deg);
+  }
+  75% {
+    transform: translate(-20vw, 40vh) rotate(180deg);
+  }
+  100% {
+    transform: translate(50vw, -50vh) rotate(360deg);
+  }
+}
+
+@keyframes square-move {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  20% {
+    transform: translate(30vw, -50vh) scale(1.2);
+  }
+  40% {
+    transform: translate(-40vw, 40vh) scale(1.4);
+  }
+  60% {
+    transform: translate(20vw, 60vh) scale(1);
+  }
+  80% {
+    transform: translate(-20vw, -30vh) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
