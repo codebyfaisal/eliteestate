@@ -14,10 +14,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-.hero .slick-slider .slick-slide {
-  transition: all 4s ease-out !important;
-}
-
 .slick-arrow {
   width: auto !important;
   height: auto !important;
@@ -48,10 +44,16 @@ body {
 }
 
 .slick-dots li {
-  width: 3rem !important;
+  width: 0.5rem !important;
   height: 0.3rem !important;
   background-color: #ccc;
   border-radius: 1rem;
+}
+
+@media Screen and (width > 500px){
+  .slick-dots li {
+    width: 2.5rem !important;
+  } 
 }
 
 .slick-dots li button::before {
@@ -60,8 +62,6 @@ body {
   color: transparent !important;
 }
 .slick-dots li.slick-active {
-  width: 4rem;
-  height: 0.2rem;
   background-color: #6366f1;
 }
 

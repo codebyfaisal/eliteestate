@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   Header,
   Hero,
@@ -11,14 +12,17 @@ import {
 import { Toaster } from "react-hot-toast";
 
 function App() {
+  useEffect(() => {
+    window.scrollTo({ left: 0 });
+  }, []);
   return (
     <>
       <Toaster />
       <Header />
       <Hero />
 
-      <div id="about" className="py-8 md:p-0"></div>
-      <main className="px-2 md:px-10 lg:px-20 relative space-y-20">
+      <div className="sm:py-4 md:py-0"></div>
+      <main className="px-2 md:px-10 lg:px-20 relative space-y-20 mt-8 sm:mt-0">
         <About />
         <Projects />
         <Video />

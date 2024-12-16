@@ -19,7 +19,7 @@ const Hero = () => {
 
   return (
     <section
-      className="w-full h-[90vh] px-2 md:px-10 lg:px-20 relative hero"
+      className="w-full sm:h-[90vh] px-2 md:px-10 lg:px-20 relative hero"
       id="home"
     >
       <div className="canvas absolute top-0 left-0 size-full z-[-1000]">
@@ -112,16 +112,16 @@ const Hero = () => {
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full z-[1000] items-center">
+      <div className="sm:grid sm:grid-cols-1 md:grid-cols-2 sm:gap-8 h-full z-[1000] items-center space-y-4 sm:space-y-0">
         {/* Text Section */}
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1.5 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="space-y-6"
+          className="space-y-4"
         >
-          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight text-gray-700 capitalize">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight tracking-tight text-gray-700 capitalize">
             Find your dream home effortlessly.
           </h1>
           <p className="text-lg md:text-xl text-gray-700 opacity-90">
@@ -166,6 +166,7 @@ const Hero = () => {
               </div>
             ))}
           </Slider>
+        <div id="about"></div>
         </motion.div>
       </div>
     </section>
