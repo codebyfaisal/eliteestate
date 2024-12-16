@@ -19,7 +19,7 @@ const Hero = () => {
 
   return (
     <section
-      className="w-full sm:h-[90vh] px-2 md:px-10 lg:px-20 relative hero"
+      className="w-full sm:h-[90vh] px-2 md:px-10 lg:px-20 relative hero mt-8 md:mt-0"
       id="home"
     >
       <div className="canvas absolute top-0 left-0 size-full z-[-1000]">
