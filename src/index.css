@@ -7,6 +7,7 @@
 * {
   font-family: "Outfit", sans-serif;
   scroll-behavior: smooth !important;
+  transition: 0.3s;
 }
 
 body {
@@ -184,4 +185,22 @@ body {
   100% {
     transform: translate(0, 0) scale(1);
   }
+}
+
+/* custom scroll */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #cdcfd1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5F69F2;
+  border-radius: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #262e9c;
 }

@@ -19,7 +19,7 @@ const Hero = () => {
 
   return (
     <section
-      className="w-full sm:h-[90vh] px-2 md:px-10 lg:px-20 relative hero mt-8 md:mt-0"
+      className="w-full sm:h-[95vh] px-2 md:px-10 lg:px-20 relative hero mt-8 md:mt-0"
       id="home"
     >
       <div className="canvas absolute top-0 left-0 size-full z-[-1000]">
@@ -114,11 +114,7 @@ const Hero = () => {
 
       <div className="sm:grid sm:grid-cols-1 md:grid-cols-2 sm:gap-8 h-full z-[1000] items-center space-y-4 sm:space-y-0">
         {/* Text Section */}
-        <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 1.5 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+        <div
           className="space-y-4"
         >
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight tracking-tight text-gray-700 capitalize">
@@ -135,15 +131,11 @@ const Hero = () => {
           >
             Explore Projects
           </a>
-        </motion.div>
+        </div>
 
         {/* Slider Section */}
-        <motion.div
+        <div
           className="relative bg-white"
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 1.5 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
         >
           <Slider {...sliderSettings}>
             {projectsData.slice(0, 2).map((project, index) => (
@@ -152,7 +144,7 @@ const Hero = () => {
                   <img
                     src={project.image}
                     alt={`Featured property in ${project.location}`}
-                    className="w-full h-[25rem] md:h-[30rem] object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-in-out"
+                    className="w-full h-[25rem] md:h-[36rem] object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-in-out"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-75 group-hover:opacity-90 transition-opacity duration-500"></div>
@@ -167,7 +159,7 @@ const Hero = () => {
             ))}
           </Slider>
         <div id="about"></div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

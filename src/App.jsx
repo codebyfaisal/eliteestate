@@ -1,20 +1,12 @@
 import { useEffect } from "react";
-import {
-  Header,
-  Hero,
-  About,
-  Projects,
-  Testimonials,
-  Contact,
-  Footer,
-  Video,
-} from "./components/components.js";
+import { Header, Hero, About, Projects, Testimonials, Contact, Footer, Video, } from "./components/components.js";
 import { Toaster } from "react-hot-toast";
 
 function App() {
   useEffect(() => {
-    window.scrollTo({ left: 0 });
+    window.scrollTo({ left: 0, behavior: "smooth" });
   }, []);
+
   return (
     <>
       <Toaster />

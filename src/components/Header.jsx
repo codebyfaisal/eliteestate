@@ -18,7 +18,7 @@ const Header = () => {
       className="flex gap-4 items-center justify-between pt-2 bg-white px-2 md:px-10 lg:px-20 sticky top-0 left-0 w-full z-[9998] shadow-md"
     >
       <button onClick={() => handleScrollTo("home")}>
-        <img src={assets.logo} alt="" loading="lazy" className="w-28" />
+        <img src={assets.logo} alt="Logo" className="w-28" />
       </button>
 
       <nav
